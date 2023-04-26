@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600&display=swap');
+
+/* body */
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgb(10, 10, 10);
+    overflow-x: hidden;
+}
+
+/* wrapper (bg) */
+.wrapper{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+.wrapper img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1
+}
+
+/* own avatar */
+.hat-avatar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 212px;
+    height: 212px;
+    transform: translateY(-150%);
+    animation: avatar 1.4s forwards;
+}
+
+/* header text */
+.header-text{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-top: 70px;
+    margin-right: 100px;
+    margin-left: auto;
+    color: white;
+    animation: hat_text 1s forwards;
+}
+.header-text-h2{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    margin-top: -80px;
+    margin-right: auto;
+    margin-left: 315px;
+    color: #ffba27;
+    animation: hat_text_h2 1.8s forwards;
+}
+
+/* Buttons */
+.project_button{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 80px;
+    background: #ffba27;
+    border:
+    2px
+    solid
+    #ffba27;
+    animation: button 4s forwards;
+}
+.project_button:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: rgba(43, 43, 43, 0);
+}
+.project_button_text{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    margin-top: 16px;
+    margin-left: 115px;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+.project_button2{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 80px;
+    background: #ffba27;
+    border:
+    2px
+    solid
+    #ffba27;
+    animation: button 4s forwards;
+}
+.project_button2:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: rgba(43, 43, 43, 0);
+}
+.project_button_text2{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: white;
+    margin-top: 16px;
+    margin-left: 115px;
+    font-size: 37px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+}
+a{
+    color: #8d817600;
+    text-decoration: none !important;
+    border: none !important;
+    }
+
+
+/* @media */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        -ms-flex-direction:column;
+        flex-direction: column
+    }
+}
+
+/* animations */
+@keyframes avatar {
+    0% {transform: translateY(-150%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes hat_text {
+    0% {opacity: 0; transform: translateY(150%);}
+    100% {opacity: 1; transform: translateY(0);}
+    
+}
+
+@keyframes hat_text_h2 {
+    0% {opacity: 0; transform: translateY(150%);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes button {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@keyframes dis {
+    0% {transform: translateY(-150%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+
+/* divison */
+.division{
+    display: block;
+    justify-content: center;
+    margin-top: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 1px;
+    background: #ffffff;
+}
+.division_text{
+    display: block;
+    color: white;
+    margin-left: 200px;
+    font-size: 25px;
+    font-weight: 200;
+    height: 2px;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* contacts buttons */
+/* discord */
+.discord{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+    background: #ffbb2700;
+    border:
+    3px
+    solid
+    #ffffff;
+    border-radius: 8px;
+    animation: dis 1s forwards;
+}
+.discord_text{
+    color: white;
+    margin-top: -38px;
+    margin-left: 112px;
+    font-size: 25px;
+    font-weight: 300;
+    height: 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+.discord img{
+    width: 43px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+.discord:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: rgb(33, 57, 108);
+}
+/* github */
+.github{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+    background: #ffbb2700;
+    border:
+    3px
+    solid
+    #ffffff;
+    border-radius: 8px;
+    animation: dis 1s forwards;
+}
+.github_text{
+    color: white;
+    margin-top: -60px;
+    margin-left: 118px;
+    font-size: 25px;
+    font-weight: 300;
+    height: 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+.github img{
+    width: 56px;
+    margin-top: 8px;
+    margin-left: 0px;
+}
+.github:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: rgb(30, 30, 30);
+}
+/* steam */
+.steam{
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-align: center;
+    align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 50px;
+    background: #ffbb2700;
+    border:
+    3px
+    solid
+    #ffffff;
+    border-radius: 8px;
+    animation: dis 1s forwards;
+}
+.steam_text{
+    color: white;
+    margin-top: -44px;
+    margin-left: 120px;
+    font-size: 25px;
+    font-weight: 300;
+    height: 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+.steam img{
+    width: 46px;
+    margin-top: 2px;
+    margin-left: 8px;
+}
+.steam:hover{
+    transition: 0.4s all ease-in-out;
+    background-color: rgb(30,38,51)
+}
+
+/* wrapper (bg) */
+.wrapper_2 img{
+    right: auto;
+}
+
+/* divison */
+.division_2{
+    display: block;
+    justify-content: center;
+    margin-top: -80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 1px;
+    background: #ffba27;
+}
+.division_2_text{
+    display: block;
+    color: rgb(255, 255, 255);
+    margin-left: 251px;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: 200;
+    height: 2px;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* projects blocks */
+/* alphamap block */
+.alphamap{
+    width: 502px;
+    height: 242px;
+    border-radius: 20px;
+    margin-top: 102px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffffff;
+}
+.alphamap img{
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.header_text_am{
+    color: rgb(0, 0, 0);
+    margin-left: 42px;
+    margin-top: 20px;
+    margin-right: auto;
+    font-size: 28px;
+    font-weight: 600;
+    height: 2px;
+    font-family: 'Manrope', sans-serif;
+}
+.division_t{
+    display: block;
+    justify-content: center;
+    margin-top: -175px;
+    margin-left: 48px;
+    margin-right: auto;
+    width: 120px;
+    height: 2px;
+    background: #000000;
+}
+.info_text_am{
+    color: rgb(0, 0, 0);
+    margin-top: 60px;
+    margin-left: 22px;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 400;
+    height: 2px;
+    line-height: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+.alphamap_progress_bar{
+    border-radius: 40px;
+    width: 143px;
+    height: 8px;
+    background: #696969;
+    margin-top: -25px;
+    margin-left: 20px;
+}
+.alphamap_progress{
+    border-radius: 40px;
+    width: 97px;
+    height: 8px;
+    background: #000000;
+    margin-top: -18px;
+    margin-left: 0px;
+}
+.alphamap_progress_text{
+    color: rgb(0, 0, 0);
+    margin-top: -28px;
+    margin-left: 77px;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 500;
+    height: 2px;
+    line-height: 20px;
+    font-family: 'Manrope', sans-serif;
+}
